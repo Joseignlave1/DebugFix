@@ -56,11 +56,15 @@ namespace WordsPhrases
                 phrase.Append(word.Text);
             }
 
-            string result = phrase.ToString();
+            string result = phrase.ToString().Trim();
+            string frasenew=result.Trim().Replace(" ", " ");
+           
+
+
 
             // Remueve el primer espacio que se agrega siempre
 
-            return result;
+            return frasenew;
         }
     }
 }
